@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <strong>data from api</strong> <br>
+
+    {% for i in response%}
+  <h4> USERID: </h4>  {{i.userId}} 
+  <h4> ID: </h4>    {{i.id}} 
+  <h4> TITLE: </h4>   {{i.title}} 
+  <h4> BODY: </h4>  {{i.body}} <br>
+    <hr>
+    {%endfor%}
+</body>
+</html>
